@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "FrankRuhlLibre-Black";
+  src: local("FrankRuhlLibre-Black"),
+  url("../public/font/FrankRuhlLibre-Black.ttf");
+  
+}
+@font-face {
+  src: local("FrankRuhlLibre-Bold"), url("../public/font/FrankRuhlLibre-Bold.ttf");
+  font-family: "FrankRuhlLibre-Bold";
+}
+@font-face {
+  src: local("Lato-Black"), url("../public/font/Lato-Black.ttf");
+  font-family: "Lato-Black";
+}
+@font-face {
+  src: local("Lato-Bold"), url("../public/font/Lato-Bold.ttf"); 
+  font-family: "Lato-Bold";
+}
+@font-face {
+  src: local("Lato-Light"), url("../public/font/Lato-Light.ttf");
+  font-family: "Lato-Light";
+}
+@font-face {
+  src: local("Lato-Regular"), url("../public/font/Lato-Regular.ttf");
+  font-family: "Lato-Regular";
+}
+@font-face {
+  src: local("Lato-Light"), url("../public/font/Lato-Light.ttf");
+  font-family: "Lato-Light";
+}
+
+
+.app{
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width:none;
+}
+.section{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width:none;
+}

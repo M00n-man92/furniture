@@ -1,0 +1,239 @@
+@import "../../global.scss";
+
+@media (max-width: 40em) {
+	
+}
+
+.home {
+	// background-color: red;
+	.sexcatagories {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+
+		.makecatagory {
+			padding: 0 1em;
+			cursor: pointer;
+			margin-right: 50px;
+			height: 40px;
+			// width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: solid 1px #555;
+			border-radius: 4px;
+			background-color: rgb(194, 194, 255);
+
+			span {
+				color: black;
+			}
+		}
+
+		.femakecatagory {
+			padding: 0 1em;
+			cursor: pointer;
+			height: 40px;
+			// width: 100px;
+			margin-left: 20px;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: solid 1px #555;
+			background-color: rgb(255, 231, 235);
+
+			span {
+				color: black;
+			}
+		}
+	}
+
+	.beautify {
+		display: flex;
+		flex-direction: column;
+
+		@include mobile {
+			// background-color: red;
+		}
+
+		.companyname {
+			@include mobile {
+				max-height: 30em;
+			}
+
+			//     }
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+
+			// background-color: pink;
+			img {
+				width: 90vw;
+				height: 90vh;
+				padding: 30px 10em;
+				object-fit: contain;
+
+				@include mobile {
+					max-width: 40em;
+					// width: 20em;
+					max-height: 25em;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.sliderorproduct {
+			width: 100vw;
+			height: 10em;
+			// background-color: red;
+			display: flex;
+			align-items: center;
+
+			// justify-content: center;
+			@include mobile {
+				max-width: 40em;
+				// background-color: red;
+				max-height: 8em;
+			}
+
+			.lightnigga {
+				// padding: 20px;
+				position: relative;
+				left: 20px;
+				cursor: pointer;
+				// margin-left: 20px;
+				//     @media (min-width:30em) {
+				//         display         : none;
+				//         background-color: red;
+				// //
+				//     }
+				@include mobile {
+					left: -3px;
+					margin-left: 0px;
+				}
+				.ion {
+					//     width : 15px;
+					//     height: 15px;
+					// margin-left: 20px;
+					// display: none;
+
+					@include mobile {
+						display: flex;
+						width: 15px;
+						height: 15px;
+						margin-left: 0px;
+						left: 0px;
+						margin-left: 0px; // background-color: red;
+					}
+				}
+			}
+
+			.darknigga {
+				// @media (min-width:30em) {
+				//     display         : none;
+				//     // background-color: red;
+
+				// }
+				position: relative;
+				right: 10px;
+				cursor: pointer;
+				// @include mobile{
+				//     width: 40px;
+				//     height:40px;
+				//     border-radius: 100%;
+				//     background-color: red;
+
+				// }
+				.ion {
+					//     width : 15px;
+					//     height: 15px;
+					// margin-right: 80px;
+					// display: none;
+
+					@include mobile {
+						display: flex;
+						margin-right: -5px;
+						width: 15px;
+						height: 15px;
+						right: 0px;
+					}
+				}
+			}
+
+			.dopemoney {
+				transition: all 0.5s ease-in-out;
+				margin-left: 30px;
+				// padding: 0 30px;
+				width: 80em;
+				// background-color: blue;
+				height: inherit;
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+
+				@include mobile {
+					max-width: 40em;
+					// background-color: red;
+					margin-left: -8px;
+					max-height: 10em;
+				}
+
+				.keepmoving {
+					transition: all 0.5s ease-in-out;
+					width: 400vw;
+					// background-color: pink;
+					height: inherit;
+					display: flex;
+
+					@include mobile {
+						// background-color: red;
+						max-height: 9em;
+					}
+
+					.singleproduct {
+						margin-left: 20px;
+						width: 120px;
+						height: 150px;
+						// background-color: orange;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						cursor: pointer;
+						background-color: #f5fdfb;
+
+						@include mobile {
+							margin-left: 3px;
+							max-width: 10em;
+							max-height: 8em;
+							// background-color: red;
+						}
+
+						&:hover {
+							background-color: #e6f0ec;
+						}
+
+						img {
+							width: 130px;
+							height: 120px;
+							margin-bottom: 10px;
+							object-fit: contain;
+							@include mobile {
+								max-width: 7em;
+								max-height: 6em;
+							}
+						}
+
+						.priceofproduct {
+							position: relative;
+
+							left: -40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+.third {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100vh;
+  // background-color: red;
+  overflow: hidden;
+  @media (max-width:40em) {
+    overflow: visible;
+    margin: 3% 0% 3% 3%;
+  }
+  .container {
+    display: flex;
+    @media (max-width:40em) {
+      height: inherit;
+      width: inherit;
+      // background-color: red;
+    }
+    img {
+      height: 80%;
+      margin-right: 2%;
+      width: 50%;
+      border-top-left-radius: 25%;
+    }
+    .infoholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:flex-end;
+      @media (max-width:40em) {
+        width: inherit;
+        height: inherit;
+        justify-content:center;
+        // background-color: red;
+      }
+      .header {
+        // background-color: blue;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        @media (max-width:40em) {
+          margin-top: 30%;
+          width: inherit;
+          height: inherit;
+          margin-left: 1%;
+          // margin-bottom: 5%;
+          // background-color: red;
+        }
+        h3 {
+          width: 90%;
+          font-family: "FrankRuhlLibre-Bold";
+          font-size: 68px;
+          color: #34251f;
+          @media (max-width:40em) {
+            // background-color: red;
+            width: 100%;
+            font-size: 22px;
+          }
+        }
+
+      }
+      .info{
+        margin-left: 10%;
+        margin-bottom: 10%;
+        // margin-bottom: 3%;
+        // background-color: blue;
+        @media (max-width:40em) {
+          position: relative;
+         top: -30%;
+          margin-left: 1%;
+          margin-bottom: 5%;
+          width:100%;
+          // background-color: red;
+        }
+        span{
+          // background-color: red;
+          width: 50%;
+          font-size: 20px;
+          color: #34251f;
+          @media (max-width:40em) {
+            // width: 25%;
+            font-size: 14px;
+            // background-color: red;
+          }
+        }
+
+      }
+      .values{
+        background-color: white;
+        width: 170%;
+        // right: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 20%;
+        @media (max-width:40em) {
+          position: relative;
+          width: 170%;
+          // background-color: red;
+          margin-left: 1%;
+          margin-bottom: 5%;
+          top: -30%;
+          left: -40%;
+          // background-color: red;
+        }
+        .individual{
+          
+          // margin-right: 10%;
+          h3{
+            font-family: "FrankRuhlLibre-Bold";
+        font-size: 40px;
+        color: #34251F;
+        @media (max-width:40em) {
+          font-size: 18px;
+        }
+          }
+          span{
+            
+            font-size: 18px;
+            color: #34251F;
+            @media (max-width:40em) {
+              font-size: 14px;
+            }
+          }
+        }
+        .individual:last-child{
+          
+          margin-right: 10%;
+          @media (max-width:40em) {
+            
+          }
+        }
+
+      }
+    }
+  }
+}

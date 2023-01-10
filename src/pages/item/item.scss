@@ -1,0 +1,482 @@
+@import '../../global.scss';
+
+@media (max-width:40em) {
+    .item {
+        max-width          : 40em;
+        // background-color: blue;
+        // margin-top: 0px;
+        // padding:0 1em;
+    }
+}
+
+.item {
+    .wrapperr {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        display      : flex;
+        margin-top   : 10px;
+        margin-bottom: 20px;
+        // background-color: red;
+        // padding      : 20px;
+
+        // background-color: red;
+        @include mobile {
+            margin-left: 2%;
+            margin-right: 2%;
+            padding            : 0 0.5em;
+            margin-bottom      : 10px;
+            // background-color: red;
+            max-width          : 40em;
+        }
+
+        .letmetellyou {
+            display       : flex;
+            flex-direction: column;
+            flex          : 0.1;
+
+            @include mobile {
+                flex: 0.01;
+
+            }
+
+            .booby {
+
+                background-color: #555;
+                margin-bottom   : 10px;
+                object-fit      : cover;
+                border          : none;
+                height          : 100px;
+
+                @include mobile {
+                    // height        : 60px;
+                    object-fit         : contain;
+                    max-height         : 60px;
+                    margin-bottom      : 0px;
+                    background-color   : blanchedalmond;
+                    // margin-top: ;
+                    // background-color: red;
+                    // margin-left: 0px;
+                }
+
+                img {
+                    width : 70px;
+                    height: 100px;
+                    cursor: pointer;
+
+                    @include mobile {
+                        object-fit: contain;
+                        // margin-bottom: 2px;
+                        margin-top: 2px;
+                        max-height: 5em;
+                        max-width : 3em;
+
+                    }
+
+                }
+            }
+        }
+
+        .imgg {
+            margin-left: 20px;
+            flex       : 0.7;
+            border     : none;
+// background-color: red;
+            object-fit: contain;
+
+            @include mobile {
+                margin-left: 0.5em;
+                flex       : 0.09;
+                object-fit : cover;
+            }
+
+            img {
+                overflow: hidden;
+                height: 570px;
+                width:500px;
+
+                border: none;
+
+                @include mobile {
+                    height: 300px;
+                    width : 150px;
+                }
+
+            }
+        }
+
+        .info {
+            flex          : 1;
+            display       : flex;
+            flex-direction: column;
+
+            margin-left: 20px;
+
+            @include mobile {
+                margin-left: 3px;
+            }
+
+            .title {
+                margin-top: 20px;
+
+                @include mobile {
+                    margin-top: 10px;
+                }
+
+                span {
+                    font-size  : 40px;
+                    font-weight: 500;
+
+                    @include mobile {
+                        font-size: 16px;
+
+                    }
+                }
+            }
+
+            .desc {
+                margin-top: 30px;
+
+                @include mobile {
+                    margin-top: 5px;
+                }
+
+                p {
+                    font-size  : 17px;
+                    font-weight: 400;
+
+                    @include mobile {
+                        font-size: 13px;
+                    }
+
+                }
+
+            }
+
+            .price {
+                margin-top: 30px;
+
+                @include mobile {
+                    margin-top: 5px;
+
+                }
+
+                span {
+                    font-size  : 30px;
+                    font-weight: 400;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .bag {
+                // background-color: red;
+                margin-top    : 30px;
+                display       : flex;
+                // align-items   : center;
+                flex-direction: column;
+
+                @include mobile {
+                    align-items: flex-start;
+                    margin-top : 5px;
+
+                }
+
+                .option {
+                    margin-top     : 20px;
+                    display        : flex;
+                    align-items    : center;
+                    // justify-content: center;
+
+                    @include mobile {
+                        margin-top: 0px;
+                    }
+
+                    .minus {
+                        height       : 30px;
+                        width        : 30px;
+                        cursor       : pointer;
+                        margin-bottom: 20px;
+
+                        @include mobile {
+                            height: 20px;
+                            width : 20px;
+                        }
+                    }
+
+                    .number {
+                        margin-left    : 10px;
+                        margin-right   : 10px;
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+                        height         : 36px;
+                        width          : 30px;
+                        border-radius  : 8px;
+                        border         : 1px solid rgb(132, 132, 219);
+
+                        @include mobile {
+                            height       : 26px;
+                            width        : 20px;
+                            border-radius: 6px;
+                        }
+
+                        span {
+                            font-size: 13px;
+
+                        }
+                    }
+
+                    .plus {
+
+                        height: 30px;
+                        width : 30px;
+                        cursor: pointer;
+
+                        @include mobile {
+                            height: 20px;
+                            width : 20px;
+                        }
+                    }
+                }
+
+                .cart {
+                    margin-left: 00px;
+                    display    : flex;
+                    margin-top : 20px;
+                    align-items: center;
+                    height     : 40px;
+                    width      : 170px;
+                    border     : 1px solid rgb(132, 132, 219);
+
+                    @include mobile {
+                        margin-left: 5px;
+                        margin-top : 0px;
+                        height     : 35px;
+                        width      : 100px;
+                    }
+
+                    &:hover {
+                        .op {
+
+                            height: 40px;
+                            width : 40px;
+
+
+                        }
+
+
+                    }
+
+                    button {
+                        align-items     : center;
+                        justify-content : center;
+                        height          : 40px;
+                        width           : 120px;
+                        border          : none;
+                        padding         : 10px;
+                        cursor          : pointer;
+                        font-size       : 13px;
+                        outline         : none;
+                        background-color: inherit;
+
+                        @include mobile {
+                            width    : 70px;
+                            height   : 20;
+                            font-size: 12px;
+
+                        }
+                    }
+
+                    .op {
+                        cursor: pointer;
+                        height: 30px;
+                        width : 30px;
+
+                        &:hover {
+                            height: 40px;
+                            width : 40px;
+
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .selectt {
+                margin-top : 30px;
+                display    : flex;
+                align-items: center;
+
+                @include mobile {
+                    margin-top    : 10px;
+                    flex-direction: column;
+                    align-items   : flex-start;
+                    margin-left   : 5px;
+                }
+
+                .size {
+                    margin-left: 52px;
+
+                    @include mobile {
+                        // margin-left: 5px;
+                        margin-left: 0px;
+                        margin-top : 10px;
+                    }
+
+                    span {
+                        font-size  : 20px;
+                        font-weight: 400;
+
+                        @include mobile {
+                            font-size: 13px;
+                        }
+                    }
+
+                    select {
+                        padding      : 10px;
+                        margin-left  : 10px;
+                        border       : 1px solid black;
+                        height       : 40px;
+                        max-width    : 100px;
+                        border-radius: 5px;
+
+                        @include mobile {
+                            max-width  : 60px;
+                            margin-left: 5px;
+                            padding    : 0%;
+                            font-size  : 10px;
+                        }
+                    }
+                }
+
+                .color {
+
+
+                    display    : flex;
+                    align-items: center;
+
+                    // background-color: red;
+                    @include mobile {
+                        // margin-left: 5px;
+                        display            : flex;
+                        align-items        : center;
+                        // background-color: red;
+                    }
+
+                    .manishboy {
+                        display    : flex;
+                        align-items: center;
+
+                        span {
+                            font-size  : 20px;
+                            font-weight: 400;
+
+                            @include mobile {
+                                font-size    : 13px;
+                                margin-bottom: 3px;
+                            }
+                        }
+                    }
+
+                    // select {
+                    //     padding      : 10px;
+                    //     margin-left  : 10px;
+                    //     border       : 1px solid black;
+                    //     height       : 40px;
+                    //     width        : 90px;
+                    //     border-radius: 5px;
+                    //     @include mobile{
+                    //     padding: 0%;
+                    //     margin-left: 5px;
+                    //     width: 50px;
+                    //     background-color: black;
+                    //     }
+                    // }
+                    .jazzythinds {
+                        display            : flex;
+                        // background-color: red;
+                        align-items        : center;
+
+                        @include mobile {
+                            width              : 100px;
+                            // background-color: red;
+                            align-items        : center;
+                            flex-wrap          : wrap;
+                        }
+
+                        .ohhellnahh {
+                            transition: all ease 0.5s;
+
+                            margin-left  : 10px;
+                            margin-bottom: 5px;
+                            width        : 30px;
+                            height       : 30px;
+                            border-radius: 100%;
+
+                            &:hover {
+                                width : 25px;
+                                height: 25px;
+
+                            }
+
+                            .jk {
+                                object-fit   : contain;
+                                width        : 30px;
+                                height       : 30px;
+                                border-radius: 100%;
+
+                                @include mobile {
+                                    margin-left   : 3px;
+                                    width         : 20px;
+                                    height        : 20px;
+                                    // border     : 1px solid #555;
+                                    ;
+                                }
+
+                            }
+
+                            // cursor       : pointer;
+                            @include mobile {
+                                margin-left   : 3px;
+                                width         : 20px;
+                                height        : 20px;
+                                // border     : 1px solid #555;
+                                ;
+                            }
+                        }
+
+                        // .ohhellnah {
+                        //     margin-left  : 10px;
+                        //     width        : 30px;
+                        //     height       : 30px;
+                        //     border-radius: 100%;
+                        //     border       : 1px solid #555;
+                        //     cursor       : pointer;
+                        //     @include mobile{
+                        //         // background-color: black;
+                        //         margin-left: 3px;
+                        //     width: 15px;
+                        //     height: 15px;
+                        //     margin-left: 5px;
+                        //     }
+                        // }
+                    }
+
+
+
+
+
+
+
+                }
+            }
+
+        }
+
+    }
+}

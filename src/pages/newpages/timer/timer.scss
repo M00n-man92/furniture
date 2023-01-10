@@ -1,0 +1,116 @@
+.timer{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  background-color: #EEDDCC;
+  display: flex;
+  height: 70vh;
+  @media (max-width:40em) {
+    margin: 1% 1% 0% 1%;
+  }
+  .first{
+    margin-top: 5%;
+    margin-left: 10%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+    @media (max-width:40em) {
+      margin-top: 1%;
+      margin-left: 3%;
+      // background-color: red;
+      align-items: center;
+      justify-content: flex-start;
+      height: 90%;
+     
+    }
+    // background-color: red;
+    h3{
+      font-size: 48px;
+      font-family: "FrankRuhlLibre-Bold";
+      @media (max-width:40em) {
+        font-size: 22px;
+      }
+
+    }
+    span{
+      margin-top: 4%;
+      font-size: 18px;
+      text-align: center;
+      @media (max-width:40em) {
+        margin-top: 25%;
+        font-size: 14px;
+      }
+    }
+    .countercontainer{
+      // background-color: red;
+      margin-top: 4%;
+      height: inherit;
+      width: inherit;
+      display: flex;
+      @media (max-width:40em) {
+        margin-top: 44%;
+        // margin-top: unset;
+      }
+      .individual{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        margin-right: 10%;
+        @media (max-width:40em) {
+          height: 30%;
+          width: 70%;
+          margin-right: 2%;
+        }
+        h3{
+          font-size: 38px;
+          font-family: "Lato-Bold";
+          @media (max-width:40em) {
+            font-size: 22px;
+          }
+        }
+        
+      }
+
+    }
+    button{
+      margin-top: 5%;
+      background-color: #34251F;
+      color: white;
+      font-size: 18px;
+      width: 70%;
+      height: 40%;
+      padding: 2%;
+      border: none;
+      cursor: pointer;
+      @media (max-width:40em) {
+        margin-top: unset;
+        height: 10%;
+        font-size: 14px;
+      }
+    }
+  }
+  .second{
+    flex: 1;
+    margin-right: 10%;
+    width: 100%;
+    height: 90%;
+    @media (max-width:40em) {
+      margin-right: 2%;
+    }
+    // background-color: red;
+    img{
+      object-fit: cover;
+      height: 100%;
+      // margin-right: 2%;
+      width: 100%;
+      // border-top-left-radius: 25%;
+    }
+  }
+}

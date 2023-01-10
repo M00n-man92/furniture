@@ -1,0 +1,21 @@
+.stripe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .but{
+       width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            height: 50px;
+            width: 100px;
+            border: 1px solid gray;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    }
+}

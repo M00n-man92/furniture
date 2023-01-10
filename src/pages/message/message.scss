@@ -1,0 +1,228 @@
+@import '../../global.scss';
+@media (max-width:40em) {
+  
+    
+}
+.message {
+
+    @include mobile{
+        max-width: 40em;
+        // margin-top: 10px;
+       
+    }
+    .playnice {
+        display: flex;
+        margin-top: 20px;
+        
+        // background-color: red;
+        @include mobile{
+            margin-top: 10px;
+        }
+
+        .goodmornin {
+            flex: 1;
+
+            @include mobile {
+                // background-color: red;
+                // flex            : 0.3;
+                width: 70px;
+            }
+
+            .wutang {
+                display        : flex;
+                align-items    : center;
+                flex-direction : column;
+                justify-content: space-between;
+                @include mobile{
+                    // background-color: blue;
+                    display: flex;
+                    flex-direction: column;
+                    // margin-bottom: 10px;
+                    display: flex;
+                    align-items: baseline;
+                    margin-left: 10px;
+                    // justify-content:left;
+                }
+
+                .rollinwiththisone {
+                    margin-top         : 20px;
+                    cursor             : pointer;
+                    // background-color: red;
+                    width              : 200px;
+                    @include mobile{
+                        background-color: bisque;
+                        width: 70px;
+                    }
+
+                    &:hover {
+                        background-color: rgb(247, 242, 242);
+                    }
+
+                }
+            }
+        }
+
+        .somethinelse {
+            flex               : 1;
+            flex-direction     : column;
+            // background-color: red;
+            padding            : 10px;
+@include mobile{
+    // background-color: red;
+    padding: 0px;
+    width: 0px;
+    flex: 0;
+}
+            span {
+                margin-left: 40px;
+                font-size  : 30px;
+
+                margin-bottom: 20px;
+                margin-top   : 20px;
+                @include mobile{
+                    color:white;
+                    margin-left: 0px;
+                    font-size: 0px;
+                }
+            }
+
+            .rules {
+                margin-left: 10px;
+@include mobile{
+    margin-left: 0px;
+}
+                li {
+                    font-size: 20px;
+@include mobile{
+    font-size: 0px;
+}
+                }
+            }
+
+        }
+
+        .imnotsureanymore {
+            // background-color: red;
+            flex               : 3;
+            // width           : 700px;
+            height             : 88vh;
+            // background-color: bisque;
+            display            : flex;
+            flex-direction     : column;
+            justify-content    : center;
+@include mobile{
+    // background-color: rgb(46, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+    height: 91vh;
+}
+            span {
+                @include mobile{
+                    font-size: 15px;
+                }
+                font-size: 25px;
+                color    : #555;
+
+            }
+
+        }
+
+        .goodmorinin {
+            // background-color: red;
+            flex               : 3;
+            // width           : 700px;
+            height             : 88vh;
+            // background-color: bisque;
+            display            : flex;
+            flex-direction     : column;
+
+            .youknowwht {
+
+                height             : 80vh;
+                // background-color: red;
+                display            : flex;
+                flex-direction     : column;
+                // background-color: red;
+                width              : 100%;
+                overflow-y         : scroll;
+                overflow-x         : hidden;
+@include mobile{
+    // background-color: red;
+}
+            }
+
+            ::-webkit-scrollbar {
+                width: 7px;
+            }
+
+            ::-webkit-scrollbar-track {
+                box-shadow   : inset 0 0 5px grey;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background   : #555;
+                border-radius: 10px;
+            }
+
+            
+
+            .whatitreallymeans {
+
+                display            : flex;
+                align-items        : center;
+               
+
+                .findyourdreams {
+                    display            : flex;
+                    width              : 100%;
+                    // background-color: red;
+                    align-items        : center;
+                    justify-content    : space-between;
+                    
+               
+
+                    .immabeonmtvmama {
+                        width              : 85%;
+                       
+                        // background-color: blue;
+
+                        textarea {
+                            margin-top: 3px;
+                            width     : 100%;
+                            height    : 100%;
+                            font-size : 18px;
+                            @include mobile{
+                                // background-color: brown;
+                                font-size: 13px;
+                           }
+                        }
+                    }
+
+                    .igoformint {
+                        margin-right    : 10px;
+                        cursor          : pointer;
+                        background-color: rgb(11, 179, 11);
+                        height          : 40px;
+                        border-radius   : 4px;
+                        border          : none;
+                        color           : white;
+                        width           : 70px;
+                        @include mobile{
+                            // background-color: brown;
+                            font-size: 13px;
+                            margin-left: 5px;
+                            height: 32px;
+                            width: 32px;
+                            width: 50px;
+                       }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

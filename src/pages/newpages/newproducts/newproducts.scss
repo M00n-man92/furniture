@@ -1,0 +1,54 @@
+.newproducts {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  @media (max-width:40em) {
+    margin: 3% 0% 3% 3%;
+
+  }
+  // background-color: blue;
+  h3 {
+    font-size: 48px;
+    font-family: "FrankRuhlLibre-Bold";
+    @media (max-width:40em) {
+      font-size: 22px;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    span {
+      
+      margin-right: 2%;
+      cursor: pointer;
+      @media (max-width:40em) {
+        // background-color: red;
+        // color: red;
+        margin-right: 2%;
+        font-size: 14px;
+      }
+    }
+  }
+  .productscontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 100%;
+    @media (max-width:40em) {
+      margin-top: 2%;
+    }
+    // background-color: red;
+
+  }
+}

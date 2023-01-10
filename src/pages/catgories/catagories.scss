@@ -1,0 +1,53 @@
+@import '../../global.scss';
+@media (max-width:40em) {
+    .catagory{
+    // background-color: blue;
+    margin-top: 0px;
+    }
+}
+.catagory{
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    // width: 100%;
+    // background-color: red;
+    .blamegame{
+        margin-left: 250px;
+        @include mobile{
+            margin-left: 40px;
+            margin-top: 3px;
+            // background-color: red;
+        }
+        // background-color: red;
+        span{
+            font-size: 30px;
+            font-weight: 400;
+            @include mobile{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+    .lovetoplay{
+        display: flex;
+        // justify-content: space-between;
+    
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 23px;
+        background-color: rgb(235, 226, 226);
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        width: 95%;
+        justify-content: center;
+        // background-color: red;
+        @include mobile{
+            margin-left: 0px;
+            margin-top: 3px;
+            max-width: 40em;
+
+
+        }
+    }
+}

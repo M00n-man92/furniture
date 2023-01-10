@@ -1,0 +1,122 @@
+@import '../../../global.scss';
+
+@media (max-width:40em) {
+    
+}
+.productlist {
+//   @include mobile{width: 330px;}
+
+// background-color: red;
+    .tilte {
+        margin-top : 20px;
+        margin-left: 20px;
+margin-bottom: 40px;
+@include mobile{
+    margin-bottom: 20px;
+}
+        h2 {
+            margin-left: 20px;
+            font-weight: 500;
+            @include mobile{
+                // background-color: blue;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    .containerrr {
+      
+        display        : flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        @include mobile{
+            // background-color: red;
+            padding: 0px;
+        }
+
+        .filter {
+
+            @include mobile{
+                // width: 400px;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+                // background-color: red;
+            }
+            select{
+                padding: 10px;
+                margin-left: 10px;
+                // border: 1px solid black;
+                height: 40px;
+                width: 90px;
+                border-radius: 5px;
+                @include mobile{
+                    height: 40px;
+                    width: 70px; 
+                    font-size: 11px;
+                   
+                }
+            }
+            
+            }
+            &.l {
+                font-size  : 20px;
+                margin-left: 20px;
+                
+                @include mobile{
+                    // background-color: red;
+                    margin-left: 0px;
+                }
+                span{
+                    @include mobile{
+                        font-size: 17px;
+                       
+                        // background-color: blue;
+                    }
+                select{
+
+                    .birthday{
+                        @include mobile{
+                            margin-left: 20pxs;
+                        }
+                    }
+                }
+
+            }
+
+            &.r {
+                @include mobile{
+                    margin-left: 0px;
+                    // background-color: blue;
+                }
+                select{
+                   
+                    width: 120px;
+
+                    
+                    @include mobile{
+                        // font-size: 17px;
+                      
+                        width: 50px;
+                        // background-color: grey;
+                    }
+ 
+                }
+                font-size   : 20px;
+                margin-right: 200px;
+                span{
+                    @include mobile{
+                        font-size: 17px;
+                        width: 50px;
+                    }
+                }
+                @include mobile{
+                    margin-right:0px;
+                }
+            }
+        }
+    }
+}

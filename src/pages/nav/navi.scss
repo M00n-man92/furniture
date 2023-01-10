@@ -1,0 +1,527 @@
+@import '../../global.scss';
+
+// @media (max-width:40em){
+//     display: block;
+//     // background-color: red;
+//         }
+@media (max-width:40em) {
+    .wrapper {
+        display   : flex;
+        max-height: 2em;
+        max-width : 40em;
+
+        // background-color: violet;
+        // background-color: brown;
+        //  background-color: red;
+        .left {
+            // flex            : 1;
+            flex               : 0.5;
+            //  align-items: flex-start;
+            // background-color: blue;
+
+
+
+
+        }
+
+        .right {
+            // background-color: red;
+            // flex: auto;
+        }
+
+    }
+}
+
+.wrapper {
+    // @include mobile {
+    //     width: 360px;
+    //     display:flex;
+    //     // background-color: blue;
+    //     justify-content:space-between;
+    // }
+
+    margin-top: 3px;
+
+    display         : flex;
+    // margin-bottom: 10px;
+
+
+    .left {
+        flex       : 3;
+        display    : flex;
+        align-items: center;
+        overflow   : hidden;
+        min-width  : 10em;
+
+        // margin-right: 80px;
+        @include mobile {
+
+            //  min-width: 10em;
+            //   background-color: brown;
+        }
+
+        .lightnigga {
+            @media (min-width:30em) {
+                display         : none;
+                background-color: red;
+
+            }
+
+            .ion {
+                //     width : 15px;
+                //     height: 15px;
+                // margin-left: 20px;
+                display: none;
+
+                @include mobile {
+                    display    : flex;
+                    width      : 10px;
+                    height     : 10px;
+                    margin-left: 0px;
+                    margin-left: -5px // background-color: red;
+                }
+            }
+
+        }
+
+        .darknigga {
+            @media (min-width:30em) {
+                display         : none;
+                background-color: red;
+
+            }
+
+            .ion {
+                //     width : 15px;
+                //     height: 15px;
+                // margin-right: 80px;
+                display: none;
+
+                @include mobile {
+                    display     : flex;
+                    margin-right: -5px;
+                    width       : 10px;
+                    height      : 10px;
+                }
+            }
+
+        }
+
+        .killakilla {
+            margin-right        : 20px;
+            margin-left         : 20px;
+            width               : 60vw;
+            //  background-color: red;
+            display             : flex;
+            overflow            : hidden;
+
+            @include mobile {
+                // width: 30vw;
+                // background-color: red;
+                margin-right: 0px;
+                margin-left : 0px;
+            }
+
+            .mneyeserahnew {
+                transition    : all 0.5s ease;
+                // margin-left: 20px;
+
+                width      : 30vw;
+                display    : flex;
+                align-items: center;
+
+                // overflow:scroll;
+                // background-color: blue;
+                @include mobile {
+                    // max-width: 10vw ;
+
+                    // background-color: blue;
+                }
+
+            }
+        }
+
+
+
+
+
+        /* @include mobile {
+            // display:grid;
+            // width: 70px;
+            // flex:content;
+            // // flex: none;
+            // // background-color: red;
+            // // position: absolute;
+            // margin-top: 10px;
+            // // background-color: orange;
+            // margin-right: 0px;
+            
+
+        } */
+
+        @media (max-width:40em) {
+            // display: flex;
+            // background-color: red;
+            padding  : 0 0.5em;
+            font-size: 5px;
+            flex     : auto;
+        }
+
+        .languge {
+            span {
+                // @include mobile {
+                //     // font-size: 13px;
+                // }
+
+            }
+        }
+
+        .navigatoe {
+            margin-left        : 20px;
+            // width: 140px;
+            display            : flex;
+            // background-color: blue;
+
+            @media (max-width:40em) {
+                margin-left: 0px;
+
+                padding: 0 1em;
+            }
+
+            span {
+                font-size  : 20px;
+                font-weight: 300;
+                cursor     : pointer;
+
+                @media (max-width:40em) {
+                    font-size  : 11px;
+                    font-weight: 300;
+                    cursor     : pointer;
+                }
+
+                &:hover {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .right {
+
+        flex   : 3;
+        display: flex;
+
+        /*  @include mobile {
+            margin-right       : 100px;
+            // background-color: red;
+            flex               : none;
+            // width: 30px;
+            // position: absolute;
+            // right:0px;
+            // left: 200px;
+        }
+ */
+        &.take {
+            margin-left: 10px;
+
+
+            @media (max-width:40em) {
+                // margin-left: 10px;
+                flex               : auto;
+                // background-color: violet;
+            }
+        }
+
+        @include mobile {
+            margin-left        : 0px;
+            flex               : auto;
+            // background-color:brown;
+        }
+
+        .container {
+            display    : flex;
+            align-items: center;
+            margin-left: 50px;
+
+            // background-color: black;
+            @include mobile {
+                margin-left : 0px;
+                // max-width: 40em;
+                // margin: 0px;
+            }
+
+            .itrusteverypartofyou {
+                display       : flex;
+                flex-direction: column;
+// align-items: center;
+// background-color: red;
+                @media (max-width:40em) {
+                    // min-width: em;
+                    // background-color: purple;
+
+
+                }
+
+                .tellmewhaturwaitnfor {
+                    display          : flex;
+                    flex-direction   : column;
+                    // height: 100px;
+                    position         : absolute;
+                    margin-top       : 35px;
+                    z-index          : 3;
+                    // border        : 1px solid lightgrey;
+                    width            : 190px;
+                    background-color :
+                        white;
+                    // display: none;
+
+                    @include mobile {
+                        max-width          : 9em;
+                        font-size          : 12px;
+                        // background-color: red;
+                    }
+
+                    .alegineneeye {
+                        margin-left  : 5px;
+                        margin-top   : 5px;
+                        border-bottom: 1px solid black;
+
+                        // @include mobile {background-color: red;}
+
+                    }
+                }
+
+                .serasch {
+                    display    : flex;
+                    align-items: center;
+                    border     : 1px solid lightgray;
+                    padding    : 5px;
+
+                    &hateit {
+                        margin-left: 40px;
+
+                    }
+
+                    @media (max-width:40em) {
+                        max-width          : 5em;
+                        // background-color: red;
+                    }
+
+                    .uworryaboutthewrongthings {
+
+                        &.babe {
+                            max-width          : 1300px;
+                            // margin-left: ;
+                            // background-color: red;
+
+
+
+
+                        }
+
+                        border: none;
+
+                        @include mobile {
+                            max-width          : 4em;
+                            // background-color: red;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                    }
+
+                    // .uworryaboutthewrongthingsbabe{
+                    //     border: none;
+
+                    //     @include mobile {
+                    //         width: 30px;
+                    //     }
+
+                    //     &:focus {
+                    //         outline: none;
+                    //     }
+                    // }
+                    // className={"wayiwanntedto"+(lovelokedown)?"uloose":""}
+                    // .wayiwanntedtouloose{
+                    // border: 1px solid red;
+                    //     // border: none;
+                    //     &:focus {
+                    //         outline: none;
+                    //     }
+                    //     @include mobile{
+                    // border: 1px solid red;
+                    //         width: 400px;
+                    //     }
+                    // }
+
+
+                }
+            }
+
+        }
+
+        .image {
+            height     : 20px;
+            margin-left: 10px;
+            display    : flex;
+
+            align-items: center;
+            // background-color: red;
+            @include mobile {
+                height: 20px;
+                margin-left: 0px;
+            }
+            .star {
+                margin-top: 7px;
+
+                @include mobile {
+                    margin-top : 1px;
+                    margin-left: 5px;
+                }
+            }
+            
+
+            
+
+            // justify-content: center;
+            // &.likeido{
+            //     // margin-left: 10px;
+            // }
+            @include mobile {
+                max-height         : 20px;
+                margin-left        : 0px;
+                // background-color: red;
+
+            }
+
+            .badge {
+                height: 0px;
+                width : 0px;
+            }
+
+            .belhidatenager {
+                cursor     : pointer;
+                margin-left: 10px;
+
+                @include mobile {
+                    width: 20px;
+                    height: 20px ;
+                    margin-left: 0px;
+                }
+            }
+
+
+
+        }
+        .suicidal{
+            display: flex;
+            align-items: center;
+            // background-color: red;
+            .star {
+                margin-top: 7px;
+
+                @include mobile {
+                    margin-top : 1px;
+                    margin-left: 5px;
+                }
+                .belhidatenager{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+        .rocky{
+            display: flex;
+            align-items: center;
+            @include mobile{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: start;
+                // background-color: red;
+            }
+            
+            .ereesey {
+                
+                // background-color: red;
+                margin-left: 20px;
+                cursor     : pointer;
+                font-size  : 17px;
+
+    // background-color: red;
+                @include mobile {
+                    font-size  : 13px;
+                    margin-left:5px;
+                    margin-bottom: 3px;
+                }
+            }
+    
+        }
+
+        
+
+    }
+
+    .center {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        // flex           : 1;
+        // max-width: 30rem;
+        // background-color: red;
+        @include mobile {
+            // display:block;
+            // flex: none;
+            // background-color: blue;
+            // width: 100px;
+            // margin-left: -100px;
+
+            // flex: none;
+
+            // width: ;
+            // position: absolute;
+            // left: 20px;
+            // top: 37px;
+            // margin-left: 20px;
+            // left: -15px;
+            // flex: 3;
+            // background-color: red;
+            //    min-width: 5rem;// width              : 300px;
+            // flex               : auto;
+            // margin-left        : 100px;
+            // background-color: red;
+            min-width          : 7em;
+            margin-right       : 1px;
+            flex               : auto;
+            // background-color: blue;
+        }
+
+        &.yetmbihon {
+
+            // margin-left: 20px;
+            @include mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @include mobile {
+            margin-left   : 0px;
+            // margin-left: 25px;
+        }
+
+        h3 {
+            font-size  : 30px;
+            font-weight: 500;
+
+            @include mobile {
+                font-size  : 16px;
+                font-weight: 500;
+                // color: white;
+            }
+        }
+
+    }
+
+}

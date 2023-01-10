@@ -1,0 +1,89 @@
+@import '../../global.scss';
+
+    .blackexcellence {
+        display       : flex;
+        flex-direction: column;
+        width         : 100%;
+        margin-top    : 10px;
+
+        .somethings {
+
+            display       : flex;
+            // align-items: center;
+
+
+            // background-color: red;
+            // display    : flex;
+            // align-items: center;
+            @include mobile{
+                // background-color: red;
+                display: flex;
+                align-items: center;
+            }
+            // img {
+            //     object-fit   : cover;
+            //     height       : 40px;
+            //     width        : 40px;
+            //     border-radius: 50%;
+            //     @include mobile{
+            //         height: 20px;
+            //         width: 20px;
+            //     }
+            // }
+
+
+            // height: 20px;
+
+            p {
+                margin-left     : 10px;
+                // height: 20px;
+                padding         : 10px;
+                border-radius   : 20px;
+                background-color: rgb(46, 190, 190);
+                color           : white;
+                max-width       : 300px;
+                @include mobile{
+                    margin-left: 5px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                }
+            }
+
+        }
+
+        .cuzhehurtin {
+            span {
+                font-size: 13px;
+                @include mobile{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .blackexcellence.own {
+        display    : flex;
+        align-items: flex-end;
+        margin-right: 40px;
+
+        p {
+            margin-left     : 10px;
+            // height: 20px;
+            padding         : 10px;
+            border-radius   : 20px;
+            background-color: rgb(240, 240, 240);
+            color           : black;
+            max-width       : 300px;
+            @include mobile{
+                margin-left: 5px;
+                padding: 5px;
+                border-radius: 10px;
+                font-size: 13px;
+            }
+        }
+
+        // margin-left: 200px;
+        // justify-content: center;
+        // background-color: red;
+    }
